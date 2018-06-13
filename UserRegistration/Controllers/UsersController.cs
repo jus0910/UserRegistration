@@ -58,7 +58,7 @@ namespace UserRegistration.Controllers
 
             if (id != user.Id)
             {
-                return BadRequest();
+                return BadRequest("Id from URL does not match request");
             }
 
             var validationResults = new List<ValidationResult>();
